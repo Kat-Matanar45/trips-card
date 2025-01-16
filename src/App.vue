@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper mt-5">
+    <router-view></router-view>
     <HeroView />
   </div>
 </template>
