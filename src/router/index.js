@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-    { path: '/', name: 'HeroView', component: () => import('@/views/HeroView.vue')},
+    { path: '/trips-card', name: 'HeroView', component: () => import('@/views/HeroView.vue')},
     { path: '/trips-card/item-page', name: 'cardsTrips', component: () => import('@/views/ItemCards.vue')}
   ];
 
