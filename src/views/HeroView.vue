@@ -3,7 +3,6 @@
         <div class="grid d-flex justify-content-between flex-wrap">
             <CardComponent 
                 v-for="card in cards"
-                @click="navigate"
                 :key="card.id"
                 :card="card"
             />
@@ -21,11 +20,6 @@ export default {
     computed: {
         cards() {
             return this.$store.getters['getCards']
-        }
-    },
-    methods: {
-        navigate() {
-            
         }
     }
 }
