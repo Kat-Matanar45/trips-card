@@ -5,6 +5,7 @@
                 v-for="card in cards"
                 :key="card.id"
                 :card="card"
+                @click.prevent="navigate(card.id)"
             />
         </div>
     </div>
@@ -20,6 +21,11 @@ export default {
     computed: {
         cards() {
             return this.$store.getters['getCards']
+        }
+    },
+    methods: {
+        navigate(id) {
+            this.$router.push({name: 'cardsTrips', params: {id: id}})
         }
     }
 }
