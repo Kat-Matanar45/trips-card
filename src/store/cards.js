@@ -205,6 +205,11 @@ const cards = {
       getters: {
         getCards(state) {
             return state.cards
+        },
+        getCoffeeById(state) {
+            return (id) => {
+                return state.cards.find((card) => card.id === id)
+            }
         }
     }
 }
