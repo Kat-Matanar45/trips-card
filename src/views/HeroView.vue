@@ -5,7 +5,7 @@
                 v-for="card in cards"
                 :key="card.id"
                 :card="card"
-                @click.prevent="navigate(card.id)"
+                @click='navigate(card.id)'
             />
         </div>
     </div>

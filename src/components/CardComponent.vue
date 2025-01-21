@@ -1,5 +1,5 @@
 <template>
-        <div class="item-wrapper d-flex flex-column">
+        <div class="item-wrapper d-flex flex-column" @click="$emit('click')">
             <img :src="require(`@/assets/img/${card.image}`)" class="mb-3" :alt="card.image">
             <h3>{{ card.title }}</h3>
             <div class="description" v-if='card.text.length < 550'>
