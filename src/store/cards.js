@@ -206,7 +206,7 @@ const cards = {
         getCards(state) {
             return state.cards
         },
-        getCoffeeById(state) {
+        getCardById(state) {
             return (id) => {
                 return state.cards.find((card) => card.id === id)
             }

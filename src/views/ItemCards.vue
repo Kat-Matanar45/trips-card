@@ -14,7 +14,7 @@
 export default {
     computed: {
         card() {
-            return this.$store.getters['getCoffeeById'](this.$route.params.id)
+            return this.$store.getters['getCardById'](this.$route.params.id)
         }
     }
 }
